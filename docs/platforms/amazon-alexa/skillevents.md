@@ -147,7 +147,7 @@ ON_EVENT: {
 				
 				// Remove user from the database when the skill is disabled
 				// if the user re-enables the skill, they will have a new userId anyway
-				this.$user.delete();
+				await this.$user.delete();
     },
 }
 ```
